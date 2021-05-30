@@ -10,8 +10,10 @@
 <body>
    <center>
 
-   <button><a href="anddows2.html">Anddows</a></button>
-   <button><a href="anddows3.html">Telegram</a></button>
+   <button class="button"><a href="anddows2.html">Anddows</a></button>
+   <button class="button"><a href="anddows3.html">Telegram</a></button>
+      
+      <br>
       
       <img src="anddows1.jpg" width="950px" height="900px">
       
@@ -19,7 +21,35 @@
       
    
 <style>
-    
+   .button {
+        background-color: #FFFF8D;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        width: 250px;
+        border-radius: 20px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+
+      .button {
+        opacity: 0.8;
+        background-color: white;
+        color: black;
+        border: 2px solid #FFFF8D; /* Green */
+      }
+
+      .button {
+        transition-duration: 0.4s;
+      }
+
+      .button:hover {
+        background-color: #FFFF8D; /* Green */
+        color: black;
+      }
+
 @media screen and (min-width: 769px) {
     /* STYLES HERE */
 }
