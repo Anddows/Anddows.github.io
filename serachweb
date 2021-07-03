@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel = "icon" href = "https://sisterslivingworks.org/wp-content/uploads/2017/11/search-05-1.png" type = "image/x-icon">
+<meta charset="UTF-8">
+<title>SearchWeb.uz</title>
+<link rel="stylesheet" href="sayt.css">
+
+
+</head>
+<body>
+<center>
+<img src="https://sisterslivingworks.org/wp-content/uploads/2017/11/search-05-1.png" width="100px" height="100px" />
+<br>
+
+<h1><font color="#e53935">S</font><font color="#1E88E5">e</font>archWeb.uz</h1>
+
+<br>
+
+
+<a href="https://yandex.ru"><img src="https://avatars.mds.yandex.net/get-lpc/1520633/ef2a27b6-800c-4a83-a864-192193c41b38/orig" width="50px" height="50px" /></a>
+<!--yandex.ru-->
+<br>
+
+
+<a href="https://google.com"><img src="https://lh4.googleusercontent.com/-JGT2qEoG5X4/AAAAAAAAAAI/AAAAAAAAHko/fH9KqPJv1Ls/photo.jpg?sz=5064" width="50px" height="50px" /></a>
+
+<br>
+
+
+<a href="https://chrome.com"><img src="https://yt3.ggpht.com/a/AATXAJxqjCF2K38Yq5cAAZ9Y7kKD9pRvoiO36zXpRozFzQ=s900-c-k-c0x00ffffff-no-rj" width="50px" height="50px" /></a>
+
+<br>
+
+<!--ya.ru-->
+<a href="https://youtube.com"><img src="https://kidsbusiness.com.au/wp-content/uploads/2019/03/youtube-logo-png-photo-0.png" width="50px" height="50px" /></a>
+<!-- yandex.ru, mover.uz, youtube, google, ya.ru kundalik.com -->
+<br>
+
+
+<a href="https://translate.google.com/?hl=uz"><img src="https://www.vippng.com/png/full/33-331586_icon-google-translate-logo.png" width="50px" height="50px"/></a>
+
+</center>
+</body>
+</html>
