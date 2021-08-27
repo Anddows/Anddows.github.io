@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <link rel = "icon" href = "codeideaicon.png" type = "image/x-icon">
+  <link rel="stylesheet" href="sayt.css">
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+ <title>Code Idea | Telegram BotFather</title>
+  </head>
+   <body>
+    <font color="#424242">
+      <h3 class="text4">
+        <b>Python da chat bot va keyboard button yaratish 1/1</b>
+      </h3>
+<br>
+<font color="#424242">
+  <h3 class="text2">
+    Keyboard buttonlar nima uchun qo'llaniladi? Keyboard buttonlar telegram botlarga yanada qulayliklar yaratib beradi.
+    Endi esa biz uni qoshishimiz uchun:
+</h3>
+<br>
+<font color="#424242">
+  <h3 class="text2">
+<pre>
+  <kbd>
+import telebot
+
+bot = telebot.TeleBot('botingiz tokeni')
+
+#keyboard buttonimizni yaratib olamiz.
+button = telebot.types.ReplyKeyboardMarkup(True)
+
+button.row("salom")
+button.row("rahmat")
+
+#start bosganingizda sizga javob qayarishi uchun:
+
+@bot.message_handler(commands = ['start'])
+def start_message(message):
+#reply_markup /start bosilganida keyboard buttonimizni chaqiramiz:
+  bot.reply_to(message, "salom", reply_markup = button)
+
+@bot.message_handler(content_types = ['text'])
+def send_message(message):
+
+  if message.text.lower() == "salom":
+    bot.send_message(message.chat.id, "salom code idea ga hush kelibsiz")
+
+  elif message.text.lower() == "rahmat":
+    bot.send_message(message.chat.id, "hursand bo'lgan bo'lsangiz biz ham hursandmiz")
+
+#if dan keyin elif funksiyasini qo'llashingizni maslahat beramiz.
+
+#botimiz o'chib qolmasligi uchun biz:
+
+bot.polling(none_stop = True)
+
+#dan foydalanamiz
+</kbd>
+</pre>
+</h3>
+
+</font>
+
+    <br><img class="rasm1" src="icon.png" width="50px" height="50px">
+    <font color="#424242">
+      <h3 class="icon">
+        button.row() faqat message.text.lower() dagi matnlarni oladi<br>
+        <em>
+          Eslatma:
+        </em>
+        Siz buttonlarni o'zingiz hohlaganingizcha o'zgartira olasiz.
+        </h3>
+       </font>
+
+
+
+
+
+<br>
+
+
+
+
+<br><a href="codelearn4.html"><button class="button">Keyingi</button>
+
+
+
+     <style>
+@media screen and (min-width: 769px) {
+    /* STYLES HERE */
+}
+
+@media screen and (min-device-width: 100px) and (max-device-width: 768px) {
+}
+
+
+
+
+.installpython {
+  color: #03A9F4;
+}
+
+ .text1 {
+  font-family: sans-serif;
+ }
+
+  .text2 {
+  padding: 50px;
+  font-family: sans-serif;
+/*  margin-left: 100px;*/
+ }
+
+   .text4 {
+  font-family: sans-serif;
+  margin-left: 50px;
+ }
+
+  .rasm1 {
+    display: inline-block;
+  margin-left: 100px;
+  float: left;
+ }
+
+   .icon {
+     margin-top: 5px;
+    display: inline-block;
+  margin-left: 10px;
+  float: left;
+ }
+
+    .button {
+        margin-top: 35px;
+        border: none;
+        color: white;
+        float: right;
+        background-color: #212121;
+        padding: 15px 32px;
+        width: 250px;
+        border-radius: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+
+      .button {
+        opacity: 0.5;
+        color: #FFFFFF;
+        border: 2px solid #FFFFFF; /* Green */
+      }
+
+      .button {
+        transition-duration: 0.4s;
+      }
+
+      .button:hover {
+        background-color: #616161;
+        color: black;
+      }
+
+        a {
+    color: #03A9F4;
+  }
+
+
+
+      </style>
+
+      </body>
+      </html>
