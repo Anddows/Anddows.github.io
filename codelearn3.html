@@ -7,16 +7,17 @@
 <meta name="viewport" content="width=device-width, user-scalable=no" />
  <title>Code Idea | Telegram BotFather</title>
   </head>
-   <body> 
+   <body>
     <font color="#424242">
       <h3 class="text4">
-        <b>BotFather</b>
+        <b>BotFather va Pythonni o'rnatish 2/1</b>
       </h3>
 <br>
 <font color="#424242">
   <h3 class="text2">
-  Telegram botlar qanday yaratiladi? Telegram botlar hozirgi kunda insonlarga yaxshi yordamchi bo'lib kelmoqda. Biz telegram botlardan har xil maqsadlarda foydalanishimiz mumkin. Masalan, Oziq ovqatlar buyurtma qilishga, Do'kon sifatida, Dasturchilik sohasida ham qulayliklar yaratadi. Hullas telegram botlar har xil bo'lishi mumkin. Ular har xil dasturlash tillarida yozilgan bo'ladi. Biz esa sizlar bilan pythonda qanday qilib bot yaratishni va uni qanday qilib serverga joylashni o'rganamiz. 
+    <a href="https://youtu.be/oHOiqFs_x8Y"><em class="installpython">Pythonni o'rnatish.</em></a> Telegram botlar qanday yaratiladi? Telegram botlar hozirgi kunda insonlarga yaxshi yordamchi bo'lib kelmoqda. Biz telegram botlardan har xil maqsadlarda foydalanishimiz mumkin. Masalan, Oziq ovqatlar buyurtma qilishga, Do'kon sifatida, Dasturchilik sohasida ham qulayliklar yaratadi. Hullas telegram botlar har xil bo'lishi mumkin. Ular har xil dasturlash tillarida yozilgan bo'ladi. Biz esa sizlar bilan pythonda qanday qilib bot yaratishni va uni qanday qilib serverga joylashni o'rganamiz.
   Aytib o'tganimizdek telegram botlarning turlari ko'p va yana bir qiziq ma'lumot telegram botlardan tashqari userbotlar ham mavjud ular Pyrogram kutubxonasida yoziladi. U mavzuda esa sizga keyinroq ma'lumot beramiz. Unda boshladik!
+  Telegram bot kutubxonasini o'rnatish. <em>windows + r > terminal(cmd) > pip install pytelegrambotapi</em>
 </h3>
 </font>
 
@@ -40,11 +41,11 @@
   <pre>
     <kbd>
 import telebot
-    
+
 bot = telebot.TeleBot('botingiz tokeni')
-  
+
 #start bosganingizda sizga javob qayarishi uchun:
-  
+
 @bot.message_handler(commands = ['start'])
 def start_message(message):
     bot.reply_to(message, "salom")
@@ -63,7 +64,7 @@ bot.polling(none_stop = True)
 
 
 
-<br><a href="codelearn2.html"><button class="button">Keyingi</button>
+<br><a href="codelearn4.html"><button class="button">Keyingi</button>
 
 
 
@@ -74,8 +75,13 @@ bot.polling(none_stop = True)
 
 @media screen and (min-device-width: 100px) and (max-device-width: 768px) {
 }
-     
- 
+
+
+
+
+.installpython {
+  color: #03A9F4;
+}
 
  .text1 {
   font-family: sans-serif;
@@ -105,7 +111,7 @@ bot.polling(none_stop = True)
  }
 
     .button {
-        margin-top: 30%;
+        margin-top: 35px;
         border: none;
         color: white;
         float: right;
@@ -135,9 +141,11 @@ bot.polling(none_stop = True)
       }
 
         a {
-    color: #424242;
+    color: #03A9F4;
   }
 
-     
-     
+
+
       </style>
+    </body>
+    </html>
