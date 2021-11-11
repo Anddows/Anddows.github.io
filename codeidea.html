@@ -8,18 +8,18 @@
        <link rel="stylesheet" href="sayt.css">
   </head>
 <body background="https://trykub.ru/uploads/posts/2021-03/1616950931_website-development.jpg">
-   <body background="https://trykub.ru/uploads/posts/2021-03/1616950931_website-development.jpg">
 <audio src="audio.mp3" autoplay></audio>
-  <a href="https://anddows.github.io/codeidea.html"><h1 class="text"><font color="#FFFFFF">{ ci }</font></h1></a>
-   <a href="ciblog"><h1 class="text2"><font color="#FFFFFF">blog</font></h1></a>
-   <a href="learn.html"><h1 class="text2"><font color="#FFFFFF">learn</font></h1></a>
-   <a href="cinews"><h1 class="text2"><font color="#FFFFFF">news</font></h1></a>
+<center>
+  <a href="https://anddows.github.io/codeidea.html"><button class="buttonhome">HOME</button></a>
+   <a href="ciblog"><button class="button">BLOG</button></a>
+   <a href="learn.html"><button class="button">LEARN</button></a>
+   <a href="cinews"><button class="button">NEWS</button></a>
+
+   <br>
 
       <h1 class="text3"><font color="#FFFFFF">Pythonda telegram bot<br>yaratishni bepul o'rganing!</font></h1>
-
-<br>
-
- <a href="learn.html"><h1 class="text4"><font color="#FFFFFF">Boshlash</font></h1></a>
+      <br>
+      <a href="learn.html"><h1 class="text4"><font color="#FFFFFF">Boshlash</font></h1></a>
 
  <!--https://images.pexels.com/photos/459445/pexels-photo-459445.jpeg?auto=compress&amp;cs=tinysrgb&amp;fit=crop&amp;h=627&amp;w=1200-->
  <!--  <center>
@@ -68,7 +68,8 @@
 .text3 {
   margin-left: 35px;
   margin-top: 300px;
-  float: left;
+  /* float: left; */
+  text-align: left;
   display: inline-block;
   font-family: monospace;
 }
@@ -87,23 +88,15 @@ border: 2px solid #FFFFFF;
 
 
    .button {
-        margin-top: 20px;
-        border: none;
         color: white;
-        background-color: #212121;
-        padding: 15px 32px;
-        width: 250px;
-        border-radius: 10px 10px;
+        margin-top: 20px;
+        width: 100px;
+        height: 50px;
+        background: none;
+        border: none;
         text-align: center;
-        text-decoration: none;
         display: inline-block;
         font-size: 16px;
-      }
-
-      .button {
-        opacity: 0.5;
-        color: #FFFFFF;
-        border: 2px solid #FFFFFF; /* Green */
       }
 
       .button {
@@ -111,9 +104,31 @@ border: 2px solid #FFFFFF;
       }
 
       .button:hover {
-        background-color: #616161;
-        color: black;
+        background-color: #039BE5;
+        color: white;
       }
+
+      .buttonhome {
+           color: white;
+           margin-top: 20px;
+           width: 100px;
+           height: 50px;
+           background: none;
+           background-color: #039BE5;
+           border: none;
+           text-align: center;
+           display: inline-block;
+           font-size: 16px;
+         }
+
+         .buttonhome {
+           transition-duration: 0.4s;
+         }
+
+         .buttonhome:hover {
+           background: none;
+           color: white;
+         }
 
 @media screen and (min-width: 850px) {
     /* STYLES HERE */
@@ -136,8 +151,9 @@ body {
 
 .text4 {
   margin-left: 25px;
-  margin-top: 450px;
-  float: left;
+  margin-top: 100px;
+  /* float: left; */
+  display: inline-block;
   font-family: monospace;
 
 }
