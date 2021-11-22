@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+  <html lang="en">
+      <head>
+          <link rel = "icon" href = "codeideaicon.png" type = "image/x-icon">
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, user-scalable=no" />
+          <title>Code Idea | Anddows</title>
+      <link rel="stylesheet" href="sayt.css">
+ </head>
+<body id="demo2" background="">
+
+  <!-- <input type="file" id="imageinput" accept="image/png, image/jpeg">
+  <div id="display_image"></div>
+  <img id="myimage" src="" width="500px" height="100px" /> -->
+
+ <img class="image" src="computer.png" width="50px" height="50px" onclick="document.getElementById('files').style.display='block'"/>
+<center>
+
+<!-- images -->
+<div class="card" id="demo">
+
+     <br>
+     <button class="buttonclose" onclick="document.getElementById('demo').style.display='none'" type="button">Close</button>
+<br>
+<hr class="line">
+     <img class="imagebackg" onclick="document.getElementById('demo2').style.backgroundImage = 'url(audituning.jpg)';" src="audituning.jpg" width="100px" height="60px"/>
+     <img class="imagebackg" onclick="document.getElementById('demo2').style.backgroundImage = 'url(image9.jpg)';" src="image9.jpg" width="100px" height="60px"/>
+     <img class="imagebackg" onclick="document.getElementById('demo2').style.backgroundImage = 'url(image11.jpg)';" src="image11.jpg" width="100px" height="60px"/>
+     <img class="imagebackg" onclick="document.getElementById('demo2').style.backgroundImage = 'url(image13.jpg)';" src="image13.jpg" width="100px" height="60px"/>
+     <img class="imagebackg" onclick="document.getElementById('demo2').style.backgroundImage = 'url(image14.jpg)';" src="image14.jpg" width="100px" height="60px"/>
+     <img class="imagebackg" onclick="document.getElementById('demo2').style.backgroundImage = 'url(image10.jpg)';" src="image10.jpg" width="100px" height="60px"/>
+               </p>
+ </div>
+</center>
+
+ <!-- _______________________________________________________ -->
+
+<!-- Note -->
+<div class="editor" contenteditable="true">
+</div>
+<!-- Files -->
+
+<div class="files" id="files">
+
+     <br>
+     <button class="buttonclose" onclick="document.getElementById('files').style.display='none'" type="button">Close</button>
+<br>
+<hr class="line">
+    <button type="button" class="button" onclick="document.getElementById('file-c').style.display='block'">Images</button>
+    <br>
+    <button type="button" class="button" onclick="document.getElementById('file-c').style.display='block'">Videos</button>
+    <br>
+    <button type="button" class="button" onclick="document.getElementById('file-c').style.display='block'">App Files</button>
+               </p>
+ </div>
+
+ <!-- file d  -->
+ <div class="file-d" id="file-d">
+   <p>
+
+      <br>
+      <button class="buttonclose" onclick="document.getElementById('file-d').style.display='none'" type="button">Close</button>
+ <br>
+ <hr class="line">
+
+                </p>
+  </div>
+<!-- file c -->
+<div class="file-c" id="file-c">
+<p>
+     <br>
+     <button class="buttonclose" onclick="document.getElementById('file-c').style.display='none'" type="button">Close</button>
+<br>
+<hr class="line">
+
+<center>
+  <br>
+  <input type="file" id="imageinput" />
+  <br>
+  <!-- <div id="display_image"></div> -->
+  <img class="image-input" id="myimage" src="" />
+  <!-- image2 -->
+  <input type="file" id="input2" />
+  <br>
+  <!-- <div id="display_image"></div> -->
+  <img class="image-input" id="my2" src="" />
+
+  <!--image3-->
+  <input type="file" id="input3"/>
+  <br>
+  <!-- <div id="display_image"></div> -->
+  <img class="image-input" id="my3" src="" />
+  <!--image4-->
+  <input type="file" id="input4"/>
+  <br>
+  <!-- <div id="display_image"></div> -->
+  <img class="image-input" id="my4" src="" />
+  <!--image5-->
+  <input type="file" id="input5"/>
+  <br>
+  <!-- <div id="display_image"></div> -->
+  <img class="image-input" id="my5" src="" />
+  <!--image6-->
+  <input type="file" id="input6"/>
+  <br>
+  <!-- <div id="display_image"></div> -->
+  <img class="image-input" id="my6" src="" />
+  <!--image7-->
+  <input type="file" id="input7"/>
+  <br>
+  <!-- <div id="display_image"></div> -->
+  <img class="image-input" id="my7" src="" />
+  <!--image8-->
+  <input type="file" id="input8"/>
+  <br>
+  <!-- <div id="display_image"></div> -->
+  <img class="image-input" id="my8" src="" />
+  <!--image9-->
+  <input type="file" id="input9"/>
+  <br>
+  <!-- <div id="display_image"></div> -->
+  <img class="image-input" id="my9" src="" />
+  <!--image10-->
+  <input type="file" id="input10"/>
+  <br>
+  <!-- <div id="display_image"></div> -->
+  <img class="image-input" id="my10" src="" />
+
+
+</center>
+
+</p>
+ </div>
+
+
+<!-- _______________________________________________________ -->
+<div id="menu" class="menucard">
+<p> <button class="buttonclose" onclick="document.getElementById('menu').style.display='none'"  type="button">Close</button>
+</p>
+</div>
+
+<script>
+// alt + i images //
+window.addEventListener("keyup", event => {
+  if (event.key === "i" && event.altKey) {
+    document.getElementById('demo').style.display="block";
+  }
+});
+
+// alt + f files //
+window.addEventListener("keyup", event => {
+  if (event.key === "f" && event.altKey) {
+    document.getElementById('files').style.display="block";
+  }
+});
+
+
+
+
+
+// image1__________________________________________________________________________________________________________
+document.querySelector("#imageinput").addEventListener("change", function() {
+   const reader = new FileReader();
+
+
+   reader.addEventListener("load", () => {
+       localStorage.setItem("recent-image", reader.result);
+       // document.querySelector('#display_image').style.backgroundImage = `url(${uploaded_image})`;
+  });
+
+  reader.readAsDataURL(this.files[0]);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+   const recentImageDataUrl = localStorage.getItem("recent-image");
+
+   if (recentImageDataUrl) {
+     document.querySelector('#myimage').setAttribute("src", recentImageDataUrl);
+   }
+});
+
+// image3________________________________________________________________________________________________________
+document.querySelector("#input3").addEventListener("change", function() {
+   const reader = new FileReader();
+
+
+   reader.addEventListener("load", () => {
+       localStorage.setItem("thenew-image", reader.result);
+       // document.querySelector('#display_image').style.backgroundImage = `url(${uploaded_image})`;
+  });
+
+  reader.readAsDataURL(this.files[0]);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+   const recentImageDataUrl = localStorage.getItem("thenew-image");
+
+   if (recentImageDataUrl) {
+     document.querySelector('#my3').setAttribute("src", recentImageDataUrl);
+   }
+});
+
+
+// image2 __________________________________________________________________________________________________________
+
+document.querySelector("#input2").addEventListener("change", function() {
+   const reader = new FileReader();
+
+
+   reader.addEventListener("load", () => {
+       localStorage.setItem("new-image", reader.result);
+       // document.querySelector('#display_image').style.backgroundImage = `url(${uploaded_image})`;
+  });
+
+  reader.readAsDataURL(this.files[0]);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+   const recentImageDataUrl = localStorage.getItem("new-image");
+
+   if (recentImageDataUrl) {
+     document.querySelector('#my2').setAttribute("src", recentImageDataUrl);
+   }
+});
+
+// image4 __________________________________________________________________________________________________________
+
+document.querySelector("#input4").addEventListener("change", function() {
+   const reader = new FileReader();
+
+
+   reader.addEventListener("load", () => {
+       localStorage.setItem("neww-image", reader.result);
+       // document.querySelector('#display_image').style.backgroundImage = `url(${uploaded_image})`;
+  });
+
+  reader.readAsDataURL(this.files[0]);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+   const recentImageDataUrl = localStorage.getItem("neww-image");
+
+   if (recentImageDataUrl) {
+     document.querySelector('#my4').setAttribute("src", recentImageDataUrl);
+   }
+});
+
+
+
+// image5 __________________________________________________________________________________________________________
+
+document.querySelector("#input5").addEventListener("change", function() {
+   const reader = new FileReader();
+
+
+   reader.addEventListener("load", () => {
+       localStorage.setItem("the-image", reader.result);
+       // document.querySelector('#display_image').style.backgroundImage = `url(${uploaded_image})`;
+  });
+
+  reader.readAsDataURL(this.files[0]);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+   const recentImageDataUrl = localStorage.getItem("the-image");
+
+   if (recentImageDataUrl) {
+     document.querySelector('#my5').setAttribute("src", recentImageDataUrl);
+   }
+});
+
+// image6 __________________________________________________________________________________________________________
+
+document.querySelector("#input6").addEventListener("change", function() {
+   const reader = new FileReader();
+
+
+   reader.addEventListener("load", () => {
+       localStorage.setItem("theneww-image", reader.result);
+       // document.querySelector('#display_image').style.backgroundImage = `url(${uploaded_image})`;
+  });
+
+  reader.readAsDataURL(this.files[0]);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+   const recentImageDataUrl = localStorage.getItem("theneww-image");
+
+   if (recentImageDataUrl) {
+     document.querySelector('#my6').setAttribute("src", recentImageDataUrl);
+   }
+});
+
+
+
+// image7 __________________________________________________________________________________________________________
+
+document.querySelector("#input7").addEventListener("change", function() {
+   const reader = new FileReader();
+
+
+   reader.addEventListener("load", () => {
+       localStorage.setItem("myimage-image", reader.result);
+       // document.querySelector('#display_image').style.backgroundImage = `url(${uploaded_image})`;
+  });
+
+  reader.readAsDataURL(this.files[0]);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+   const recentImageDataUrl = localStorage.getItem("myimage-image");
+
+   if (recentImageDataUrl) {
+     document.querySelector('#my7').setAttribute("src", recentImageDataUrl);
+   }
+});
+
+
+// image8 __________________________________________________________________________________________________________
+
+document.querySelector("#input8").addEventListener("change", function() {
+   const reader = new FileReader();
+
+
+   reader.addEventListener("load", () => {
+       localStorage.setItem("myimg-image", reader.result);
+       // document.querySelector('#display_image').style.backgroundImage = `url(${uploaded_image})`;
+  });
+
+  reader.readAsDataURL(this.files[0]);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+   const recentImageDataUrl = localStorage.getItem("myimg-image");
+
+   if (recentImageDataUrl) {
+     document.querySelector('#my8').setAttribute("src", recentImageDataUrl);
+   }
+});
+
+
+// image9 __________________________________________________________________________________________________________
+
+document.querySelector("#input9").addEventListener("change", function() {
+   const reader = new FileReader();
+
+
+   reader.addEventListener("load", () => {
+       localStorage.setItem("themybest-image", reader.result);
+       // document.querySelector('#display_image').style.backgroundImage = `url(${uploaded_image})`;
+  });
+
+  reader.readAsDataURL(this.files[0]);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+   const recentImageDataUrl = localStorage.getItem("themybest-image");
+
+   if (recentImageDataUrl) {
+     document.querySelector('#my9').setAttribute("src", recentImageDataUrl);
+   }
+});
+
+
+
+// image10 __________________________________________________________________________________________________________
+
+document.querySelector("#input10").addEventListener("change", function() {
+   const reader = new FileReader();
+
+
+   reader.addEventListener("load", () => {
+       localStorage.setItem("themy-image", reader.result);
+       // document.querySelector('#display_image').style.backgroundImage = `url(${uploaded_image})`;
+  });
+
+  reader.readAsDataURL(this.files[0]);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+   const recentImageDataUrl = localStorage.getItem("themy-image");
+
+   if (recentImageDataUrl) {
+     document.querySelector('#my10').setAttribute("src", recentImageDataUrl);
+   }
+});
+
+
+
+
+
+
+</script>
+
+<style>
+.image-input {
+  width: 25%;
+}
+
+.upload {
+float: left;
+}
+.line {
+/*  color: #0288D1;*/
+color: #FFFFFF;
+}
+.imagebackg {
+ margin-left: 5px;
+ float: right;
+ padding: 5px;
+ margin-top: 5px;
+ display: inline-block;
+}
+.buttonclose {
+ background: none;
+ border: none;
+ float: right;
+ display: inline-block;
+ font-size: 13px;
+ width: 65px;
+ height: 35px;
+ display: block;
+ float: right;
+ position: relative;
+}
+.buttonclose {
+ transition-duration: 0.4s;
+}
+.buttonclose:hover {
+ background-color: #E64A19;
+ color: white;
+}
+
+.card {
+  box-shadow: 5px 0px 5px #BDBDBD;
+  margin-top: 10px;
+  border: 1px solid #FFFFFF;
+  width: 500px;
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+  height: 500px;
+  float: left;
+  display: none;
+  border-radius: 5px 5px;
+  background-color: #FFFFFF;
+
+ }
+
+ .file-d {
+   box-shadow: 5px 0px 5px #BDBDBD;
+   margin-top: 10px;
+   border: 1px solid #FFFFFF;
+   width: 500px;
+   display: inline-block;
+   padding: 5px;
+   position: relative;
+   height: 400px;
+   float: right;
+   display: none;
+   border-radius: 5px 5px;
+   background-color: #FFFFFF;
+
+  }
+
+  .file-c {
+    box-shadow: 5px 0px 5px #BDBDBD;
+    margin-top: 10px;
+    border: 1px solid #FFFFFF;
+    width: 250px;
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    height: 900px;
+    float: left;
+    display: none;
+    border-radius: 5px 5px;
+    background-color: #FFFFFF;
+
+   }
+
+ .files {
+   box-shadow: 5px 0px 5px #BDBDBD;
+   margin-top: 10px;
+   border: 1px solid #FFFFFF;
+   width: 105px;
+   display: inline-block;
+   padding: 5px;
+   position: relative;
+   height: 500px;
+   float: left;
+   display: none;
+   border-radius: 5px 5px;
+   background-color: #FFFFFF;
+
+  }
+
+  .thisfile {
+    float: left;
+    display: inline-block;
+  }
+
+  .thisfile2 {
+    float: left;
+    margin-left: 500px;
+    display: inline-block;
+  }
+
+.filetext {
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 10px;
+  font-family: sans-serif;
+  float: left;
+}
+  .button {
+       color: black;
+       margin-left: 10px;
+       width: 100px;
+       height: 30px;
+       background: none;
+       border: none;
+       float: left;
+       display: inline-block;
+       font-size: 16px;
+     }
+
+     .button {
+       transition-duration: 0.4s;
+     }
+
+     .button:hover {
+       background-color: #039BE5;
+       color: white;
+     }
+
+     .image {
+       float: left;
+       position: relative;
+     }
+
+     .text {
+       display: block;
+       float: left;
+       font-family: sans-serif;
+     }
+
+     .menu {
+       float: left;
+       color: black;
+       margin-left: 30px;
+       width: 50px;
+       height: 30px;
+       position: relative;
+       background: none;
+       border: none;
+       float: right;
+       display: inline-block;
+       font-size: 16px;
+     }
+     .menu {
+       transition-duration: 0.4s;
+     }
+
+     .menu:hover {
+       background-color: #039BE5;
+       color: white;
+     }
+
+     .menucard {
+       box-shadow: 5px 0px 5px #BDBDBD;
+       margin-top: 10px;
+       float: right;
+       border: 1px solid #FFFFFF;
+       width: 100px;
+       display: inline-block;
+       padding: 5px;
+       position: relative;
+       height: 500px;
+       display: none;
+       border-radius: 5px 5px;
+       background-color: #FFFFFF;
+
+      }
+
+
+     body {
+       background-attachment: fixed;
+       background-size: cover;
+     }
+
+</style>
+
+</body>
+ </html>
