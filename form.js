@@ -42,4 +42,26 @@ form.addEventListener("submit", (e) => {
 	console.log("Yuborildi")
 })
 
+form.addEventListener("submit", (e) => {
+	e.preventDefault();
+
+
+	var text2 = document.getElementById('userid3').value;
+	var text3 = document.getElementById('sendtext3').value;
+
+	var my_text = `<b>Qomar | ramazan</b>%0A%0A${text3}`
+
+	var token = "5103209388:AAHyt_tDJWgx-2LwDCsOJniwa9wxV0Rqzdo";
+	var chat_id = text2;
+	var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${my_text}&parse_mode=html`
+
+	let api = new XMLHttpRequest();
+	api.open("GET", url, true);
+	api.send();
+
+	document.getElementById('card').style.display = 'block';
+	console.log("Yuborildi")
+})
+
+
 
