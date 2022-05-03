@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel = "icon" href = "https://anddows.github.io/codeideaicon.png" type = "image/x-icon">
+    <title>Classic Code Script</title>
+</head>
+<body>
+  <div class="card">
+      <div class="card-text">
+          <h3 id="text1" class="text1">Classic Code Script</h3>
+          <h3 id="text2" class="text1">Create Telegram bots</h3>
+          <div id="circle1" class="circle" onclick="img1()"></div>
+          <div id="circle2" class="circle" onclick="img2()"></div>
+          <br>
+          <hr>
+          <br><br>
+          <div class="textcard">
+          <h3 class="text4">CCS nima?</h3>
+          <h4 class="text2">CCS Code Idea jamoasi tomonidan yaratilgan va telegram bot yaratishga mo'ljallangan oddiy python script. Siz script orqali pythonda oson va tez telegram bot yarata olasiz.</h4>
+          <a href="Classic Code Script 1.8.zip" download><button class="button1">Yuklash</button></a>
+        </div>
+      </div>
 
+</div>
+<script>
+    function img1() {
+        document.getElementById("text2").style.display = "none";
+        document.getElementById("text1").style.display = "block";
+        document.getElementById("circle1").style.background = "#424242";
+        document.getElementById("circle2").style.background = "#FFFFFF";
+    }
+
+    function img2() {
+        document.getElementById("text2").style.display = "block";
+        document.getElementById("text1").style.display = "none";
+        document.getElementById("circle1").style.background = "#FFFFFF";
+        document.getElementById("circle2").style.background = "#424242";
+    }
+</script>
+
+  <style>
+      .card { width: 100%; height: 50%; text-align: center;}
+      .text1 { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: 150px; color: #424242;}
+      .text4 { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #212121;}
+      .text2 { font-family: Georgia, 'Times New Roman', Times, serif; color: #424242;}
+
+
+      .circle { width: 10px; height: 10px; border: 0.1px solid #424242; border-radius: 10px 10px; display: inline-block; margin-top: 100px;}
+
+      .button1 {
+          width: 100px;
+          height: 50px;
+          border: none;
+          background: none;
+          margin-top: 50px;
+          color: #212121;
+      }
+
+      .button1 { 
+          transition-duration: 0.4s;
+      }
+
+      .button1:hover {
+          color: #FFFFFF;
+          background: #424242;
+      }
+
+      .textcard {
+          width: 700px;
+          height: 300px;
+          background: #FFFFFF;
+          text-align: left;
+          padding-left: 10px;
+          display: inline-block;
+      
+        }
+
+ 
+      #text2 { display: none; }
+      #text3 { display: none; }
+      #text4 { display: none; }
+
+      hr { width: 50px; margin-top: 10px; background: #424242;}
+
+  </style>
+
+
+
+
+</body>
+</html>
