@@ -1,0 +1,31 @@
+.username {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #212121;
+}
+
+.job {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #424242;
+}
+
+.desc {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #424242;
+}
+
+.textcard {
+    width: 400px;
+    height: 300px;
+    background: #FFFFFF;
+    text-align: left;
+    padding-left: 10px;
+    display: inline-block;
+      
+    }
+
+hr {
+    width: 200px;
+}
+
+
+.card { width: 100%; margin-top: 150px; height: auto; text-align: center;}
