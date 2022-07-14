@@ -15,7 +15,7 @@
 
 .textcard {
     width: 400px;
-    height: 300px;
+    height: auto;
     background: #FFFFFF;
     text-align: left;
     padding-left: 10px;
