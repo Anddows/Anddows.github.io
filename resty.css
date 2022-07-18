@@ -29,3 +29,9 @@ hr {
 
 
 .card { width: 100%; margin-top: 150px; height: auto; text-align: center;}
+
+a { text-decoration: none; }
+
+.link-green { color: #00838F; font-family: Georgia, 'Times New Roman', Times, serif; }
+
+.link-blue { color: #0277BD; font-family: Georgia, 'Times New Roman', Times, serif; }
